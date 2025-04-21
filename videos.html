@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فيديوهات توعوية</title>
-    <style>
-        body {
-            font-family: "Amiri", serif;
-            background: #f1f1f1;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background: #ff7e5f;
-            color: white;
-            padding: 20px;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            border-bottom: 5px solid #e64a19;
-        }
-        .content {
-            padding: 20px;
-        }
-        .video-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .video-wrapper {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 10px;
-            max-width: 500px;
-        }
-        iframe {
-            width: 100%;
-            height: 280px;
-            border: none;
-            border-radius: 10px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>معرض الفيديو</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+      direction: rtl;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .video-item {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 15px;
+      max-width: 320px;
+      text-align: center;
+    }
+    .video-item iframe {
+      width: 100%;
+      height: 180px;
+      border-radius: 4px;
+    }
+    .video-item p {
+      margin-top: 10px;
+      color: #555;
+    }
+    .back-button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 40px;
+      text-align: center;
+    }
+    .back-button:hover {
+      background-color: #45a049;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        فيديوهات توعوية
-    </header>
 
-    <div class="content">
-        <p>مجموعة من الفيديوهات التوعوية المفيدة لصحة الجسم والعقل.</p>
+  <h1>معرض الفيديو</h1>
 
-        <div class="video-container">
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/TtOM9JeYq58" allowfullscreen></iframe>
-            </div>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/fPU0LJCw3nM" allowfullscreen></iframe>
-            </div>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/vUBHw0fRU0k" allowfullscreen></iframe>
-            </div>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/_0XsD09MZzA" allowfullscreen></iframe>
-            </div>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/A59VNsGaf7o" allowfullscreen></iframe>
-            </div>
-        </div>
+  <div class="video-gallery">
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/ID_الفيديو_الأول" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>مقدمة عن المشروع: نظرة عامة على أهداف المشروع ومكوناته.</p>
     </div>
+
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/ID_الفيديو_الثاني" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>كيفية الاستخدام: دليل تفصيلي لاستخدام التطبيق خطوة بخطوة.</p>
+    </div>
+
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/ID_الفيديو_الثالث" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <p>الميزات المتقدمة: استعراض للوظائف المتقدمة وكيفية الاستفادة منها.</p>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-button">العودة إلى الصفحة الرئيسية</a>
+
 </body>
 </html>
